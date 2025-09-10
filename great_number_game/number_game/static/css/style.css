@@ -1,0 +1,17 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  align-content: center;
+  color: white;
+
+}

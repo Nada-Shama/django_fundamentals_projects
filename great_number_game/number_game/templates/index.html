@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Great Number Game</title>
+    {% load static %}
+      <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+    <style>
+
+
+div {
+
+      background-color: {{ bgcolor|default:'white' }};
+}
+
+  
+    
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Welcome to the great number Game</h1>
+        <p>I am thinking of a number between 1 and 100. Take a guess</p>
+        
+        <div>
+            <h1>{{ message }}</h1>
+        </div>
+
+        {% if message == "Correct Answer!" %}
+            <form action="/reset">
+                <button type="submit">Play Again</button>
+            </form>
+        {% else %}
+            <form method="post">
+                {% csrf_token %}
+                <input type="number" name="guess">
+                <button type="submit">Submit</button>
+            </form>
+        {% endif %}
+    </main>
+</body>
+</html>
