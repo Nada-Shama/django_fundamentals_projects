@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Submitted Info</title>
+    {% load static %}
+      <link rel="stylesheet" href="{% static 'css/style2.css' %}"> 
+  </head>
+  <body>
+    <div class="container">
+      <h1>Form Result</h1>
+      <p>
+        <strong>Name:</strong> {{ name }}
+      </p>
+      <p>
+        <strong>Dojo Location:</strong> {{ dojo }}
+      </p>
+
+      <p>
+        <strong>Favourite Language:</strong> {{ language }}
+      </p>
+      <p>
+        <strong>Comment:</strong> {{ comment }}
+      </p>
+      <form action="/" method="get">
+        <button type="submit">Back</button>
+      </form>
+    </div>
+  </body>
+</html>

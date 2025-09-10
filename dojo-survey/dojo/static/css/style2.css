@@ -1,0 +1,36 @@
+body {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        background: white;
+        border: 2px solid #000;
+        padding: 20px;
+        width: 400px;
+      }
+      h3 {
+        margin-top: 0;
+        text-decoration: underline;
+      }
+      p {
+        margin: 8px 0;
+      }
+      strong {
+        display: inline-block;
+        width: 240px;
+      }
+      .actions {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 15px;
+      }
+      button {
+        background: #4da3af;
+        color: white;
+        padding: 6px 14px;
+        border: none;
+        box-shadow: 2px 2px #000;
+        cursor: pointer;
+      }
